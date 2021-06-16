@@ -1,7 +1,0 @@
-O que aprendi na Trybe:
-
-- Unix
-- Bash e Shell
-- Git e Github
-- JavaScript
-
