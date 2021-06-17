@@ -4,24 +4,46 @@
     <meta charset="UTF-8" />
     <title>HTML</title>
     <style>
+        body {
+            font-size: 16px;
+        }
       h1 {
         font-size: 25px;
         color: orange;
+        font-family: sans-serif;
       }
-
-      .whatcolor {
-        background-color: antiquewhite;
+      p {
+          font-weight: 600;
+          font-size: 48px;
+          font-style: oblique;
+          color: #802323;
+      }
+      #whatcolor {
+        background-color: #B29700;
+        text-align: center;
+      }
+      #amarelo {
+          color: yellow;
+      }
+      #vermelho {
+          color: red;
+      }
+      #marrom {
+          color: brown;
+      }
+      #list {
+          line-height: 2;
       }
     </style>
   </head>
   <body>
     <h1>Exercícios 3.2</h1>
-    <div class="whatcolor">
+    <div id="whatcolor">
       <p>Qual é a sua cor favorita?</p>
-      <ul>
-        <li>Amarelo</li>
-        <li>Vermelho</li>
-        <li>Marrom</li>
+      <ul id="list">
+        <li id="amarelo">Amarelo</li>
+        <li id="vermelho">Vermelho</li>
+        <li id="marrom">Marrom</li>
       </ul>
     </div>
   </body>
