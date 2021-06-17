@@ -1,0 +1,30 @@
+body {
+  font-size: 16px;
+}
+h1 {
+  font-size: 25px;
+  color: orange;
+  font-family: sans-serif;
+}
+p {
+  font-weight: 600;
+  font-size: 48px;
+  font-style: oblique;
+  color: #802323;
+}
+#whatcolor {
+  background-color: #b29700;
+  text-align: center;
+}
+#amarelo {
+  color: yellow;
+}
+#vermelho {
+  color: red;
+}
+#marrom {
+  color: brown;
+}
+#list {
+  line-height: 2;
+}
