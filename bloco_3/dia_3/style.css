@@ -17,24 +17,45 @@ body{
     }
 }
 
-ul {
-    list-style: none;
-}
-
-ol{
-    list-style: none;
-}
-
-ul:hover {
-    background-color: black;
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: aliceblue;
 }
 
-ol:hover {
-    background-color: black;
-    color: aliceblue;
+div:hover {
+    border: #000000;
+    border-style: solid;
 }
 
-li:active{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+#prim{
+    font-style: italic;
+}
+
+#prim:hover {
+    background-color: #FF6CAB;
+}
+
+#sec:hover{
+    background-color: #7366ff;
+}
+
+#compl{
+    padding: 30px;
+    font-style: italic;
+}
+
+#compl:hover{
+    background-color:rgb(114, 207, 176);
+}
+
+#esc:hover{
+    background-color: purple;
+}
+
+#cla{
+    font-style: italic;
+}
+
+#cla:hover{
+    background-color: palevioletred;
 }
