@@ -17,45 +17,63 @@ body{
     }
 }
 
-h3 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: aliceblue;
+* {
+    list-style: none;
 }
 
-div:hover {
-    border: #000000;
-    border-style: solid;
+h1 , h2, h3, h4, h5, h6{
+    color: red;
 }
 
-#prim{
-    font-style: italic;
+h1 em, h2 em, h3 em, h4 em, h5 em, h6 em {
+    font-size: 40px;
+    border: black 1px solid;
 }
 
-#prim:hover {
-    background-color: #FF6CAB;
+li{
+    font-size: 20px;
 }
 
-#sec:hover{
-    background-color: #7366ff;
+ol li {
+    background-color: yellow;
 }
 
-#compl{
-    padding: 30px;
-    font-style: italic;
+li.par {
+    color: green;
 }
 
-#compl:hover{
-    background-color:rgb(114, 207, 176);
+li.impar{
+    text-transform: uppercase;
 }
 
-#esc:hover{
-    background-color: purple;
+li em {
+    font-weight: bold;
 }
 
-#cla{
-    font-style: italic;
+li.linguagem{
+    color: blue;
 }
 
-#cla:hover{
-    background-color: palevioletred;
+li.java{
+    background-color: pink;
+}
+
+.stack:hover{
+    color: orange;
+}
+
+.w3s:hover{
+    color: green;
+}
+
+.mdn:hover{
+    color: black;
+}
+
+.dev:hover{
+    color: yellow;
+}
+
+.trybe:hover{
+    color:green
 }
