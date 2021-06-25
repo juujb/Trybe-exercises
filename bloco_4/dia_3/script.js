@@ -1,8 +1,13 @@
 let n = 5;
 let figura = "";
+let linha  = "";
 
-for (let index = 0; index < n; index++) {
-    quadrado= quadrado + "*"
-    console.log(figura);
+if(n > 1){
+    for (let index = 0 ; index < n; index++) {
+        figura = figura + "*"
+    }
+    for (let index = 0; index < n; index++) {
+        console.log(figura)
+        
+    }
 }
-
