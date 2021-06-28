@@ -4,4 +4,4 @@ let info = {
     nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
 };
 
-console.log('Olá, '+ info.personagem + '! Como vai?')
+console.log('Bem-vinda, ' + info.personagem)
