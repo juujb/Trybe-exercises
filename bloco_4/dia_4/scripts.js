@@ -1,21 +1,14 @@
+let array = [2, 3, 6, 7, 10, 1];
 
-
-function verificaPalindrome(word) {
-
-    let reverseWord = '';
-    for (let i = word.length - 1; i >= 0; i--) {
-        reverseWord += word[i];
-    }
-
+function maiorNumero(array) {
     
-    if (word === reverseWord) {
-        palindrome = true
-    } else {
-        palindrome = false
+    let indiceDoNumero;
+    for (let index = 0; index < array.length; index++) {
+        if (array[index] > array[index+1]){
+            indiceDoNumero = index
+        }
     }
-
-    return console.log(palindrome)
+    return console.log(indiceDoNumero)
 }
 
-verificaPalindrome('arara');
-
+maiorNumero(array)
