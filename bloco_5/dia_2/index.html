@@ -112,6 +112,11 @@
         rightContent.style.marginRight = 'auto';
 
         centerContent.style.backgroundColor = 'green';
+
+        for (let index = 0; index < 2; index++) {
+            let lastItems = numberList.lastElementChild;
+            numberList.removeChild(lastItems);
+        }
     </script>
   </body>
 </html>
