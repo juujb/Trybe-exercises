@@ -149,3 +149,22 @@ function changeDayColor() {
         }
     }
 }
+
+let add = document.getElementById('btn-add');
+let input = document.querySelector('input');
+function createNewTaskFromButton() {
+    if (input.value <= 0) {
+        alert('Escreva um nome para seu compromisso')
+    } else {
+    createTask(input.value)
+    }
+}
+
+function createNewTaskFromEnter(event) {
+    if (event.key === 'Enter'){
+        createTask(input.value)
+    }
+}
+
+input.addEventListener('keypress', createNewTaskFromEnter)
+add.addEventListener('click', createNewTaskFromButton);

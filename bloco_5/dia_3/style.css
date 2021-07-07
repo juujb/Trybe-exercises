@@ -15,6 +15,10 @@
   #btn-add {
     margin: 0;
   }
+
+  span {
+      display: block;
+  }
   
   .buttons-container {
     background-color: #eee;
