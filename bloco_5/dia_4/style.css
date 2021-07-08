@@ -45,6 +45,15 @@ main {
     text-align: justify;
 }
 
+.paragraph-bigger {
+    line-height: 25px;
+    margin: 10px 3% 10px 3%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    text-align: justify;
+    font-size: large;
+}
+
 #last {
     background-color: gray;
     padding: 20px;

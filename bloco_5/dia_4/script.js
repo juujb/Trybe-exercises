@@ -5,7 +5,7 @@ if (darkMode === 'enable') {
     document.body.classList.add('dark-mode');
 }
 
-button.addEventListener('click',function darkModeTogle() {
+button.addEventListener('click',function () {
     let body = document.body;
     darkMode = localStorage.getItem('darkmode');
     if (darkMode === 'enable') {
@@ -15,7 +15,31 @@ button.addEventListener('click',function darkModeTogle() {
         body.classList.add('dark-mode');
         localStorage.setItem('darkmode', 'enable');
     }
-})
+});
 
+let fontSize = localStorage.getItem('fontsize');
+let button2 = document.querySelector('#fontsize');
+let paragraphs = document.querySelectorAll('.paragraph');
 
-console.log(document.body.classList)
+if (fontSize === 'enable') {
+    for (let paragraph of paragraphs) {
+        paragraph.classList.add('paragraph-bigger');
+    }
+}
+
+button2.addEventListener('click',function () {
+    
+    fontSize = localStorage.getItem('fontsize');
+    if (fontSize === 'enable') {
+        for (let paragraph of paragraphs) {
+            paragraph.classList.remove('paragraph-bigger');
+            localStorage.setItem('fontsize', null);
+        }
+    } else {
+        for (let paragraph of paragraphs) {
+            paragraph.classList.add('paragraph-bigger');
+            localStorage.setItem('fontsize', 'enable')
+        }
+    }
+});
+
