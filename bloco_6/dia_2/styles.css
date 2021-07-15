@@ -2,9 +2,15 @@
   margin: 15px;
 }
 
+body{
+  background-color: #eeeeee;
+}
+
 form {
-  background-color: rgb(246, 247, 248);
-  border: 1px solid lightgray;
+  background-color: #e0e0e0;
+  border: 1px solid #bdbdbd;
   border-radius: 5px;
   padding: 10px;
 }
+
+@import './node_modules/pikaday/css/pikaday.css';

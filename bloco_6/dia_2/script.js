@@ -29,7 +29,11 @@ let states = [
   ];
   // Peguei a Array no comentário do Github source:https://gist.github.com/kavalcante/16106796c430c1711a71c5ba1213cee5#gistcomment-3458083
 
-  const lista = document.querySelector('#estado')
+const lista = document.querySelector('#estado');
+
+let calendar = document.getElementById('date').DatePickerX.init( {
+  format: 'dd/mm/yyyy',
+});
 
 for (const state of states) {
   let option = document.createElement('option');
