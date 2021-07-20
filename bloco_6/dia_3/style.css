@@ -25,6 +25,7 @@ body {
   display: flex;
   width: 500px;
   order: 1;
+  flex-grow: 3;
 }
 
 .menu-container ul {
