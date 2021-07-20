@@ -35,6 +35,14 @@ let calendar = document.getElementById('date').DatePickerX.init( {
   format: 'dd/mm/yyyy',
 });
 
+validation.init();
+
+const submitForm = document.querySelector('#enviar');
+
+submitForm.addEventListener('click', function () {
+  document.querySelector('.js-form').submit()
+});
+
 for (const state of states) {
   let option = document.createElement('option');
   option.innerHTML = state;

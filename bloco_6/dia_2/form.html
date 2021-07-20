@@ -15,20 +15,20 @@
     <p class="text-center lead">Preencha o Formulário</p>
   </header>
   <main class="container">
-    <form>
+    <form class="js-form">
       <h2 class="display-5 text-center">Informações Pessoais</h2>
       <div class="mb-3">  
         <label for="name" class="text-center form-label">Nome</label>
-        <input id="name" type='text' maxlength="40" class="form-control" required>
+        <input name="name" id="name" type='text' maxlength="40" class="form-control" required>
         <p class="form-text">Nós nunca vamos compartilhar seu e-mail.</p>
       </div>
       <div class="mb-3">  
         <label class='form-label' for="email" class="block">E-mail</label>
-        <input id="email" type='email' maxlength="50" class="form-control" required>
+        <input name='email' id="email" type='email' maxlength="50" class="form-control" required>
       </div>
       <div class="mb-3">
         <label class='form-label' for="cpf" class="block">CPF</label>
-        <input id="cpf" type='text' maxlength="11" class="form-control" required>
+        <input name='' id="cpf" type='text' maxlength="11" class="form-control" required>
       </div>
       <div class="mb-3">
         <label for="endereco" class="form-label">Endereço</label>
@@ -55,7 +55,7 @@
       </div>
       <div class="mb-3">
         <div class="form-floating">
-          <textarea class="form-control" placeholder="Descreva um pouco sobre você" id="textarea" required></textarea>
+          <textarea name='text'  class="form-control" placeholder="Descreva um pouco sobre você" id="textarea" required></textarea>
           <label for="textarea">Resumo do currículo</label>
         </div>
       </div>
@@ -79,6 +79,7 @@
   </main>
 </body>
 <script src="./dist/js/DatePickerX.min.js"></script>
+<script src="./node_modules/just-validate/dist/js/just-validate.min.js"></script>
 <script src="./node_modules/jquery/dist/jquery.min.js"></script>
 <script src="script.js"></script>
 </html>
