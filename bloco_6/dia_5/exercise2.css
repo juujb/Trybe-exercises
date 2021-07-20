@@ -1,0 +1,32 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: auto 2px;
+}
+
+p:nth-child(1) {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.main-content p{
+  margin: 10px;
+}
+
+h2 {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+footer {
+  margin: 10px auto;
+}
+
+footer h3 {
+  margin: 10px auto;
+}
