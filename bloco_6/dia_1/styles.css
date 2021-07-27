@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e0e0e0;
+}
+
+.input-text {
+  border: 1px solid rgb(145, 145, 145);
+  border-radius: 3px;
+  padding: 8px;
+  margin: 4px auto;
+  width: 80%;
+  text-align: center;
+}
+
+.block {
+  display: block;
+  margin: 10px;
+}
+
+.container {
+  margin: 40px auto;
+  background-color: #eee;
+  padding: 40px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  text-align: center;
+  width: 80%;
+}
+
+.tipo {
+  display: block;
+  margin: 5px;
+}
+
+#type-home {
+  width: 80%;
+  margin: 5px auto;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#botoes {
+  margin: 20px;
+  text-align: center;
+}
+
+.button {
+  padding: 5px;
+}
+
+#estado {
+  width: 40%;
+  padding: 7px;
+}

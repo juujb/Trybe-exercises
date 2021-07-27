@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="dist/css/DatePickerX.min.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <title>Formulário de Curriculo</title>
+</head>
+<body>
+  <header class="container">
+    <h1 class="text-center display-1">Currículo</h1>
+    <p class="text-center lead">Preencha o Formulário</p>
+  </header>
+  <main class="container">
+    <form class="js-form">
+      <h2 class="display-5 text-center">Informações Pessoais</h2>
+      <div class="mb-3">  
+        <label for="name" class="text-center form-label">Nome</label>
+        <input name="name" id="name" type='text' maxlength="40" class="form-control" required>
+        <p class="form-text">Nós nunca vamos compartilhar seu e-mail.</p>
+      </div>
+      <div class="mb-3">  
+        <label class='form-label' for="email" class="block">E-mail</label>
+        <input name='email' id="email" type='email' maxlength="50" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label class='form-label' for="cpf" class="block">CPF</label>
+        <input name='' id="cpf" type='text' maxlength="11" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="endereco" class="form-label">Endereço</label>
+        <input id="endereco" type='text' maxlength="200" class="form-control" required>
+      </div>
+      <div class="mb-3">  
+        <label for="cidade" class="form-label">Cidade</label>
+        <input id="cidade" type='text' maxlength="28" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="estado" class="form-label">Estado</label>
+        <select id="estado" class="form-select">
+          <option selected>Selecione uma cidade</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Moradia</label>
+        <div class="form-check">
+          <label class="form-check-label"><input name="tipo" type="radio" class="form-check-input"> Casa </label>
+        </div>
+        <div class="form-check">  
+          <label class="form-check-label"><input name="tipo" type="radio" class="form-check-input"> Apartamento</label>
+        </div>
+      </div>
+      <div class="mb-3">
+        <div class="form-floating">
+          <textarea name='text'  class="form-control" placeholder="Descreva um pouco sobre você" id="textarea" required></textarea>
+          <label for="textarea">Resumo do currículo</label>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="cargo">Cargo</label>
+        <input class='form-control' id="cargo" type="text" maxlength="40" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="cargo-descricao">Descrição do cargo</label>
+        <input class='form-control' id="cargo-descricao" type="text" maxlength="500" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="data">Data de Inicio</label>
+        <input class='form-control' id="date" type="text" required>
+      </div>
+    </form>
+    <div class="buttons d-grid gap-2 d-md-flex justify-content-md-center">
+      <button type="button" class="btn btn-outline-danger" id="limpar">Limpar</button>
+      <button class="btn btn-outline-success" id="enviar" type="submit">Enviar</button>
+    </div>
+  </main>
+</body>
+<script src="./dist/js/DatePickerX.min.js"></script>
+<script src="./node_modules/just-validate/dist/js/just-validate.min.js"></script>
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="script.js"></script>
+</html>
