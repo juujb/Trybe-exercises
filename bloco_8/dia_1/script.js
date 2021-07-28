@@ -42,3 +42,22 @@ const fortuneResult = (luck, callBack) => {
 
 console.log(fortuneResult(3,isEqual));
 
+const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+
+const countAnswers = (rightAnswers, studentAnswers, callBack) => callBack(rightAnswers, studentAnswers);
+
+const checkAnswers = (rightAnswers, studentAnswers) => {
+  let points = 0;
+  for (let index = 0; index < rightAnswers.length; index++) {
+    if (studentAnswers[index] === rightAnswers[index]) {
+      points += 1;
+    } else
+    if (studentAnswers[index] !== rightAnswers[index] && studentAnswers[index] !== 'N.A') {
+      points -= 0.5;
+    }
+  }
+  return points;
+}
+
+console.log(countAnswers(RIGHT_ANSWERS, STUDENT_ANSWERS, checkAnswers));
