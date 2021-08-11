@@ -11,7 +11,6 @@ const randomNumberArray = () => {
     const number = randomNumber();
     array.push(number);
   }
-  console.log(array);
   return array;
 };
 
@@ -34,6 +33,14 @@ const promisse = new Promise((resolve, reject) => {
   array.push(total / 3);
   array.push(total / 5);
   array.push(total / 10);
-  return console.log(array);
+  console.log(array);
+  return array;
+})
+.then(array => {
+  const total = array.reduce((acc, number) => {
+    acc += number;
+    return acc;
+  }, 0);
+  return console.log(total);
 })
 .catch(message => console.log(message));
