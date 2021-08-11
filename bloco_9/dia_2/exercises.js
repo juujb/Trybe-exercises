@@ -24,9 +24,16 @@ const promisse = new Promise((resolve, reject) => {
 
   console.log(total);
   if (total > 8000) {
-    return reject('Promise rejeitada');
+    return reject(total);
   }
-  resolve('Promise resolvida');
+  resolve(total);
 })
-.then(message => console.log(message))
+.then(total => {
+  const array = [];
+  array.push(total / 2);
+  array.push(total / 3);
+  array.push(total / 5);
+  array.push(total / 10);
+  return console.log(array);
+})
 .catch(message => console.log(message));
