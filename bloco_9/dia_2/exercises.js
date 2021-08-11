@@ -24,7 +24,7 @@ const promisse = new Promise((resolve, reject) => {
 
   console.log(total);
   if (total > 8000) {
-    return reject(total);
+    return reject("É mais de oito mil! Essa promise deve estar quebrada!");
   }
   resolve(total);
 })
