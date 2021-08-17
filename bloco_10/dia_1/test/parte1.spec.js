@@ -6,7 +6,10 @@ describe('A função sum', () => {
     expect(sum(4, 5)).toBe(9);
     expect(sum(0, 0)).toBe(0);
   });
-  test('NÃO soma strings', () => {
+  test('NÃO soma strings?', () => {
     expect(() => sum(4, '5')).toThrow(Error);
   });
+  test('retorna "parameters must be numbers" como erro?', () => {
+    expect(() => sum(4, '5')).toThrow('parameters must be numbers');
+  })
 });
