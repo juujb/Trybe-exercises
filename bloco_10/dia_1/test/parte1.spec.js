@@ -1,6 +1,7 @@
 const assert = require('assert');
 const { sum } = require('../src/parte1');
 const { myRemove } = require('../src/parte1');
+const { myRemoveWithoutCopy } = require('../src/parte1');
 
 describe('A função sum', () => {
   test('soma corretamente?', () => {
@@ -25,5 +26,18 @@ describe('A função myRemove', () => {
   });
   test('caso o elemento a ser removido não exista, retorna o array esperado?', () => {
     expect(myRemove([1, 2, 3, 4], 5)).toEqual([1, 2, 3, 4]);
+  });
+});
+
+describe('A função myRemoveWithoutCopy', () => {
+  test('remove o elemento esperado?', () => {
+    expect(myRemoveWithoutCopy([1, 2, 3, 4], 3)).toEqual([1, 2, 4]);
+    expect(myRemoveWithoutCopy([1, 2, 3, 4], 3)).not.toEqual([1, 2, 3, 4]);
+  });
+  test('não altera o array passado(sem um elemento a ser removido)?', () => {
+    expect(myRemoveWithoutCopy([1, 2, 3, 4])).toEqual([1, 2, 3, 4]);
+  });
+  test('caso o elemento a ser removido não exista, retorna o array esperado?', () => {
+    expect(myRemoveWithoutCopy([1, 2, 3, 4], 5)).toEqual([1, 2, 3, 4]);
   });
 });
