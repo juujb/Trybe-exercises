@@ -1,3 +1,5 @@
+const fetch = require('node-fetch');
+
 const uppercase = (str, callback) => {
   setTimeout(() => {
     callback(str.toUpperCase());
@@ -20,8 +22,6 @@ const findUserById = (id) => new Promise((resolve, reject) => {
 });
 
 const getUserName = (userId) => findUserById(userId).then((user) => user.name);
-
-const fetch = require('node-fetch');
 
 const getRepos = (url) => {
   return fetch(url)

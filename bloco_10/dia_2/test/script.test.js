@@ -50,5 +50,10 @@ describe('A função "getRepos":', () => {
     getRepos(url).then((array) => {
       expect(array.includes('sd-01-week4-5-project-todo-list')).toBe(true);
     })
+  ));
+  test('Encontra o repositório "sd-01-week4-5-project-meme-generator"?', () => (
+    getRepos(url).then((array) => {
+      expect(array.includes('sd-01-week4-5-project-meme-generator')).toBe(true);
+    })
   ))
 });
