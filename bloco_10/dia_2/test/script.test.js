@@ -48,12 +48,13 @@ describe('A função "getUserName" Async/Await:', () => {
 describe('A função "getRepos":', () => {
   test('Encontra o repositório "sd-01-week4-5-project-todo-list"?', () => (
     getRepos(url).then((array) => {
-      expect(array.includes('sd-01-week4-5-project-todo-list')).toBe(true);
+      expect(array.includes('sd-01-week4-5-project-todo-list')).toBeTruthy();
     })
   ));
   test('Encontra o repositório "sd-01-week4-5-project-meme-generator"?', () => (
     getRepos(url).then((array) => {
-      expect(array.includes('sd-01-week4-5-project-meme-generator')).toBe(true);
+      expect(array.includes('sd-01-week4-5-project-meme-generator')).toBeTruthy();
     })
   ))
 });
+
