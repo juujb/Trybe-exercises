@@ -1,6 +1,9 @@
 const assert = require('assert');
 const { uppercase } = require('../src/script');
 const { getUserName } = require('../src/script');
+const { getRepos } = require('../src/script');
+
+const url = 'https://api.github.com/orgs/tryber/repos';
 
 describe('A função "uppercase":', () => {
   test('Transforma as letras em letras maiúsculas?', (done) => {
@@ -40,4 +43,12 @@ describe('A função "getUserName" Async/Await:', () => {
       expect(error.message).toMatch('User with 3 not found.');
     }
   });
+});
+
+describe('A função "getRepos":', () => {
+  test('Encontra o repositório "sd-01-week4-5-project-todo-list"?', () => (
+    getRepos(url).then((array) => {
+      expect(array.includes('sd-01-week4-5-project-todo-list')).toBe(true);
+    })
+  ))
 });
