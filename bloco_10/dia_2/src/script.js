@@ -23,6 +23,5 @@ const getUserName = (userId) => findUserById(userId).then((user) => user.name);
 
 module.exports = {
   uppercase,
-  findUserById,
   getUserName,
 }
