@@ -24,6 +24,27 @@ const getAnimal = async (name) => {
 };
 // ---------------------
 
+const findAnimalByAge = (age) => (
+  // Adicione o código aqui.
+  new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const animal = Animals.find((object) => object.age === age);
+      if (animal !== undefined) {
+        return resolve(animal);
+      }
+      return reject('Nenhum animal com esse nome!');
+    }, 100);
+  })
+);
+
+const getAnimalByAge = async (age) => {
+  // Adicione o código aqui.
+  const animalObject = await findAnimalByAge(age);
+  return animalObject;
+};
+
 module.exports = {
   getAnimal,
+  getAnimal,
+  getAnimalByAge,
 }
