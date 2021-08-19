@@ -27,3 +27,17 @@ describe('A função "getUserName":', () => {
     ))
   ));
 });
+
+describe('A função "getUserName" Async/Await:', () => {
+  test('Encontra o usuario correto?', async () => {
+    const user = await getUserName(1);
+    expect(user).toBe('Mark');
+  });
+  test('Retorna o erro correto quando NÃO encontra o usuario?', async () => {
+    try {
+      await getUserName(3);
+    } catch(error) {
+      expect(error.message).toMatch('User with 3 not found.');
+    }
+  });
+});
