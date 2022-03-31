@@ -1,5 +1,5 @@
 # Trybe-exercises
-*Este repositório foi descontinuado após o módulo de fundamentos*
+**Este repositório foi descontinuado após o módulo de fundamentos**
 
 
 ## Ambiente Virtual
