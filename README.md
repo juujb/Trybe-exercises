@@ -1,5 +1,5 @@
 # Trybe-exercises
-Aonde salvo meus projetos da Trybe
+*Este repositório foi descontinuado após o módulo de fundamentos*
 
 
 ## Ambiente Virtual
